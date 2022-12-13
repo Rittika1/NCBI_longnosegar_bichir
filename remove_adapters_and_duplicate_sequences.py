@@ -3,7 +3,11 @@ import os
 import sys
 import re
 import gzip
-
+'''
+Goal: To remove the duplicated sequnces and the adpaters from the genome
+Input: unfiltered genome file or hte preliminary filtered file from NCBI
+Output: The filtered fasta with no adapters, no empty line, no duplicate sequences
+'''
 def convert_fasta_to_dict(filename):
     fastadict = {}
     fi = open(filename, 'rt')

@@ -12,14 +12,11 @@ module load samtools
 module load repeatmodeler
 module load repeatmasker
 
-
-cd /scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/longnosegar
-
 ##--Steps for the genome annotation with braker
 
 ##--First step ---- Making aligned bam file using all the RNA seq files
 hisat2-build -f  lepisosteus_osseus_noadapter_nodups_noemptylines.fasta lepisosteus_osseus
-hisat2 -p 8 -x lepisosteus_osseus -1 ../RNAs-seq/NS035_1.fq -2 ../RNAs-seq/NS035_2.fq -S lepisosteus_osseus_aligned.sam
+hisat2 -p 8 -x lepisosteus_osseus -1 .NS035_1.fq -2 .NS035_2.fq -S lepisosteus_osseus_aligned.sam
 samtools view -h lepisosteus_osseus_aligned.sam > lepisosteus_osseus_aligned.bam
 samtools sort -O bam -T tmp_ -@ 16 -o lepisosteus_osseus_aligned.sorted.bam lepisosteus_osseus_aligned.bam
 

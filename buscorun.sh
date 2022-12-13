@@ -28,8 +28,5 @@ echo "busco -i $2 -l $3 -o $4 -m $5 -f -c 32"
 busco -i $2 -l $3 -o $4 -m $5 -f -c 32
 
 ###---How to run:
-# ./../scripts_for_genome_announcement/buscorun.sh /scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/PolypterusBichir/ polypterus_bichir_lapradei_nodups_noadapters_noemptylines.fsa actinopterygii_odb10 busco_bichir_actinopterygii
 # ./../scripts_for_genome_announcement/buscorun.sh /scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/PolypterusBichir/ RNA actinopterygii_odb10 busco_longnosegar_rna
 
-
-##---how to run

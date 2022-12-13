@@ -1,4 +1,8 @@
 #TEanalysis.py
+'''
+this code is used to count the number of occurences of the repeats iudentified by repeatmodeler on the genome file. 
+This searches the TEs on the basis of their types, LINE/SINE/DNA/Unknown
+'''
 from functools import total_ordering
 import sys
 import re

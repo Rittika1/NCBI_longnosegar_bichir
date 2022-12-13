@@ -6,10 +6,10 @@ import re
 --remove the sequence headers and make the genome file into one big string
 --make on big file with all the ATGC sequences
 -- input the consensi classified file
--- in the input file, which is a fasta file, take each of the sequcnes and make it a search string
+-- in the input file, which is a fasta file, take each of the sequences and make it a search string
 --look for the search string in the big file
 --count the number of occurences using finditer
---to find total number of te sequcnes, use the count and the sequence length to get the total number of sequences for that superfamily.
+--to find total number of TE sequences, use the count and the sequence length to get the total number of sequences for that superfamily.
 """
 
 

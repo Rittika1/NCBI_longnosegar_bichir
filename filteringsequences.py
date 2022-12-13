@@ -4,7 +4,9 @@ import sys
 import re
 import gzip
 from textwrap import wrap
-
+'''
+Goal: Remove sequences having N, using the sequnce headers from another file
+'''
 def convertfastatodict(filename):
     fi = open(filename, 'rt')
     key = ''
@@ -47,7 +49,7 @@ if __name__ == '__main__':
     fastafile = sys.argv[1]
     sequence_header_list = []
     outputfile = sys.argv[2]
-    getsequenceheaddersfromfile("/home/rittika/google_drive_rmallik1/Dornburg lab work/Long-nosed-gar genome announcement/N-sequence-gar.txt", sequence_header_list)
+    getsequenceheaddersfromfile("N-sequence-gar.txt", sequence_header_list)
     convertfastatodict(fastafile)
     #print(len(sequence_header_list))
     delete_keys = []
@@ -62,5 +64,3 @@ if __name__ == '__main__':
  
 ##--how to run
 ##--python3 filteringproteins.py proteins.faa filtered_proteins.faa
-##--python3 scripts/filteringproteinfiles.py dataset/vertebrates_protein.faa dataset/vertebrates_protein_filtered.faa
-##--python3 scripts/filteringproteinfiles.py dataset/amphibians_protein.faa dataset/amphibians_protein_filtered.faa
