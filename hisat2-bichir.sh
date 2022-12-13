@@ -15,9 +15,6 @@ module load samtools
 
 cd /scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/RNAs-seq
 
-#hisat22 -p 8 -i 10 -o /scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/aligned_RNAseq --solexa1.3-quals polypterus_senegalus_bowtie NS079_1.fq.gz NS079_2.fq.gz NS080_1.fq.gz NS080_2.fq.gz NS081_1.fq.gz NS081_2.fq.gz NS082_1.fq.gz NS082_2.fq.gz NS083_1.fq.gz NS083_2.fq.gz NS084_1.fq.gz NS084_2.fq.gz NS085b_1.fq.gz NS085b_2.fq.gz
-
-
 # hisat2 [options]* -x <hisat2-idx> {-1 <m1> -2 <m2> | -U <r> | --sra-acc <SRA accession number>} [-S <hit>]
 
 hisat2-build -f  ../PolypterusBichir/polypterus_bichir_lapradei_nodups_noadapters_noemptylines.fsa polypterus_bichir_lapradei
