@@ -55,3 +55,6 @@ for key, value in TE_dict.items():
     mylist = value[1]
 
 print(sum(mylist))
+
+##-how-to-run
+##-- python3 TEanalysis.py consensi.fa.classified lepisosteus_osseus.fasta

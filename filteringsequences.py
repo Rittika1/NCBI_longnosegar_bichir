@@ -13,8 +13,7 @@ def convertfastatodict(filename):
     value = ''
     for line in fi:
         line = line.strip()
-        if line.startswith(">"): # header with lophiiformes
-            #line = re.sub(" ","_", line)
+        if line.startswith(">"): # header 
             if key != '':
                 fastadict[key] = value
             key = line[1:]
@@ -23,7 +22,7 @@ def convertfastatodict(filename):
         else:
             value += line.strip() # append to dictionary
 
-def getsequenceheaddersfromfile(filename, inputlist):#, outputlist):
+def getsequenceheaddersfromfile(filename, inputlist):
     inf = open(filename, 'r')
     for line in inf:
         #print(line)
@@ -51,7 +50,6 @@ if __name__ == '__main__':
     outputfile = sys.argv[2]
     getsequenceheaddersfromfile("N-sequence-gar.txt", sequence_header_list)
     convertfastatodict(fastafile)
-    #print(len(sequence_header_list))
     delete_keys = []
     for item in sequence_header_list:
         for key in fastadict.keys():

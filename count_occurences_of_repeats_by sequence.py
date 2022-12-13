@@ -31,8 +31,7 @@ def convert_genome_file_to_giant_string(genome_file):
 
 
 def search_occurences_of_substring(repeat_file):
-    TE_dict = {}
-    
+    TE_dict = {}  
     ri = open(repeat_file, 'r')
     for line in ri:
         if line.startswith(">"):
@@ -55,26 +54,16 @@ random_dict = search_occurences_of_substring(repeats_input)
 print("The length of the genome is:", len(giant_string))
 list_of_unique_sequences = random_dict.values()
 for key, value in random_dict.items():
-    # print (value.strip())
-# for item in list_of_unique_sequences:
-    # item = item.strip()
     item = value.strip()
     repeat_length = len(item)
-    # print(type(item))
-    # item = "GCAGTGGTTAGCATTGCTGCCTCGCAGCGCTGGGGCCCTGGGTTCAATTCCGGACCTGGGGTGCTGTCTGCGTGGAGTTTGTATGTTCTCCCCGTGTTCGCGTGGGTTTCCTCCGGGTGCTCCGGTTTCCTCCCACAGTCCAAAGACATACTGGTAGGTTAATTGGCTTCTGGGAAAATTGGCCCTGGTGTGAGTGTGTGTGTGTCTGTGTGTGTGCCCTGCGATGGACTGGCGTCCCGTCCAGGGTGTATCCTGCCTTGCGCCCGTTGCTTGCCGGGATAGGCTCCGGCTCCCCCGCGACCCTGAATTGGATGAAGCGGTTAGAAAATGGATGGATG"
-    # item = "TGTTTCTTTTCTTCTCTTTTCAGCATGGAATAAACCTTTACTTGTTCCTTTGCA"
     res = [i.start() for i in re.finditer(item, giant_string)]
-    # res = [i for i in range(len(giant_string)) if giant_string.startswith(item, i)]
-    # res = giant_string.find(item)
     occurences = len(res)
     total_repeat_content = repeat_length*occurences
     print("Number of occurences for: " + key + " is " + str(len(res)))
     # print ("The repeat is: ", item)
     print(f"Total repeat content for {key} is {total_repeat_content}")
     print("---"*50)
-    # input("want one more? ")
-# print (list_of_unique_seque
 
 
 ##--how-to-run
-## -- python3 count_occurences_of_repeats.py lepis
+## -- python3 count_occurences_of_repeats.py lepisosteus_osseus_noadapters.fasta consensi.fa.classified
