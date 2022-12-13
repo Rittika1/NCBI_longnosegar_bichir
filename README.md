@@ -17,6 +17,8 @@ The following scripts were used to prepare the genome of Longnose gar, _Lepisost
 
 * `count_occurences_of_repeats_by sequence.py`  - Takes in the consensi file from the RepeatModeler, and counts the occurence of each repeat sequence in the genome
 
+* `blast_repbase.sh` - Takes the consensi file for BLAST against the Repbase Database
+
 * `estimate_TE_content_by_TE_type.py`  - Uses the consensi file to calculate the amount of each TE type from the consensi file
 
 * `GO-analysis.sh`  - Steps for annotating transcripts using trinotate. More instructions are available [here](https://bioinformaticsworkbook.org/dataAnalysis/RNA-Seq/annotating-transcripts.html#gsc.tab=0)
