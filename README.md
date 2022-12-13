@@ -1,7 +1,7 @@
-# NCBI_longnosegar_bichir
-The following scripts weree used to prepare the genome of Longnose gar, _Lepisosteus osseus_ for NCBI submission and subsequent analysis
+# Longnose gar (_Lepisosteus osseus_) annotation and release
+The following scripts weree used to prepare the genome of Longnose gar, _Lepisosteus osseus_ for NCBI submission and subsequent analysis. The scripts use bash and Python3
 
-**Script name:**
+**Script names and functions:**
 
 * filteringsequences.py --> Remove sequences with N. It uses the file with the list of sequence headers given by NCBI  
 
@@ -19,4 +19,4 @@ The following scripts weree used to prepare the genome of Longnose gar, _Lepisos
 
 * estimate_TE_content_by_TE_type.py --> Uses the consensi file to calculate the amount of each TE type from the consensi file
 
-* GO-analysis.sh --> Steps for annotating transcripts using trinotate
+* GO-analysis.sh --> Steps for annotating transcripts using trinotate. More instructions are available [here](https://bioinformaticsworkbook.org/dataAnalysis/RNA-Seq/annotating-transcripts.html#gsc.tab=0)
