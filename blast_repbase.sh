@@ -5,7 +5,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
 #SBATCH --mem=100GB
-#SBATCH --error=/scratch/rmallik1/PhD_EVILab/SIRPs/log-EOfiles/blast_repbase08.out
 
 module load blast
 

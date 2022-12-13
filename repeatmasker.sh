@@ -5,7 +5,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32 
 #SBATCH --mem=100GB
-#SBATCH --error=/scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/repeatmasker-bichir_lapraddei.out
 
 module load repeatmodeler/
 module load repeatmasker

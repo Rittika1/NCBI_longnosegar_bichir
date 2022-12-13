@@ -1,11 +1,10 @@
 #!/bin/bash
 #SBATCH --partition=Orion
-#SBATCH --job-name=buscorunbichir
-#SBATCH --time=300:00:00
+#SBATCH --job-name=buscorungar
+#SBATCH --time=200:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=128GB
-#SBATCH --error=/scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/buscorun_garprotein_actinop.out
 
 module load busco
 export AUGUSTUS_CONFIG_PATH=$HOME/augustus_config

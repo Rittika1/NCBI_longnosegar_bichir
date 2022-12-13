@@ -5,9 +5,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16 
 #SBATCH --mem=64GB
-#SBATCH --error=/scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/hisat2-run-bichir.out
 
-module load bowtie2
 module load hisat2/2.2.0
 module load samtools
 
