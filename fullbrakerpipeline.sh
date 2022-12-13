@@ -5,7 +5,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=150GB
-#SBATCH --error=/scratch/rmallik1/PhD_EVILab/GenomeAnnouncement/genome-annotation-longnosegarpart3_maskandbraker.out
 
 module load hisat2/2.2.0
 module load samtools
